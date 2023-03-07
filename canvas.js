@@ -1,13 +1,13 @@
 (function () {
-  function playMusic() {
-    var myAudio = document.getElementById("playAudio");
-    if (myAudio.duration > 0 && !myAudio.paused) {
-      //Its playing...do your job
-    } else {
-      myAudio.play();
-      //Not playing...maybe paused, stopped or never played.
-    }
-  }
+  // function playMusic() {
+  //   var myAudio = document.getElementById("playAudio");
+  //   if (myAudio.duration > 0 && !myAudio.paused) {
+  //     //Its playing...do your job
+  //   } else {
+  //     myAudio.play();
+  //     //Not playing...maybe paused, stopped or never played.
+  //   }
+  // }
 
   //fields
   var canvas = document.getElementById("canvas");
@@ -22,9 +22,9 @@
   let check = setInterval(function () {
     drawFlowers();
   }, 1500);
-  body.addEventListener("click", function (ev) {
-    playMusic();
-  });
+  // body.addEventListener("click", function (ev) {
+  //   playMusic();
+  // });
   window.onload = drawFlowers;
   window.onresize = drawFlowers;
 
